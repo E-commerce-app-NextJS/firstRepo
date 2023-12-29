@@ -1,1 +1,0 @@
-// Dynamic route showing products in a specific category.

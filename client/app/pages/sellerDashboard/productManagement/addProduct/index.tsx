@@ -1,1 +1,0 @@
-//Form for adding a new product.
