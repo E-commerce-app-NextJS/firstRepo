@@ -1,49 +1,55 @@
-import React, { createContext, useContext, useState } from 'react';
+// // "use client"
 
-interface UserIdContextType {
-  userId: number | null;
-  setUserId: (newUserId: number) => void;
-  clearUserId: () => void;
-}
+// import React, { createContext, useContext, useState } from 'react';
 
-const UserIdContext = createContext<UserIdContextType>({
-  userId: null,
-  setUserId: () => {}, 
-  clearUserId: () => {}, 
-});
+// interface UserIdContextType {
+//   userId: number | null;
+//   setUserId: (newUserId: number) => void;
+//   clearUserId: () => void;
+// }
 
-const getUserIdString=function():string{
-    if( sessionStorage.getItem('userId')===null) return ""
-    else return sessionStorage.getItem('userId') || ""
-}
-const UserIdProvider = ({ children }: { children: React.ReactNode }) => {
-  const [userId, setUserId] = useState<number | null>(() =>
-    parseInt(getUserIdString()) 
-    ); 
+// const UserIdContext = createContext<UserIdContextType>({
+//   userId: null,
+//   setUserId: () => {}, 
+//   clearUserId: () => {}, 
+// });
 
-  const setNewUserId = (newUserId: number) => {
-    setUserId(newUserId);
-    sessionStorage.setItem('userId', String(newUserId));
-  };
+// const getUserIdString=function():string{
+//     if( sessionStorage.getItem('userId')===null) return ""
+//     else return sessionStorage.getItem('userId') || ""
+// }
+// const UserIdProvider = ({ children }: { children: React.ReactNode }) => {
+//   const [userId, setUserId] = useState<number | null>(() => {
+//     const storedUserId = getUserIdString();
+//     console.log('Stored user ID:', storedUserId);
+//     return parseInt(storedUserId);
+//   });
+     
 
-  const clearUserId = () => {
-    setUserId(null);
-    sessionStorage.removeItem('userId');
-  };
+//   const setNewUserId = (newUserId: number) => {
+//     console.log('Setting new user ID:', newUserId);
+//     setUserId(newUserId);
+//     //sessionStorage.setItem('userId', String(newUserId));
+//   };
 
-  return (
-    <UserIdContext.Provider value={{ userId, setUserId: setNewUserId, clearUserId }}>
-      {children}
-    </UserIdContext.Provider>
-  );
-};
+//   const clearUserId = () => {
+//     setUserId(null);
+//     sessionStorage.removeItem('userId');
+//   };
 
-const useUserId = () => {
-    const context = useContext(UserIdContext);
-    if (!context) {
-      throw new Error('useUserId must be used within a UserIdProvider');
-    }
-    return context;
-  };
+//   return (
+//     <UserIdContext.Provider value={{ userId, setUserId: setNewUserId, clearUserId }}>
+//       {children}
+//     </UserIdContext.Provider>
+//   );
+// };
 
-export { UserIdProvider, useUserId };
+// const useUserId = () => {
+//     const context = useContext(UserIdContext);
+//     if (!context) {
+//       throw new Error('useUserId must be used within a UserIdProvider');
+//     }
+//     return context;
+//   };
+
+// export { UserIdProvider, useUserId };

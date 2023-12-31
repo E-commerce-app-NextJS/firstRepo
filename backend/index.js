@@ -1,6 +1,6 @@
 const express = require("express");
 const db = require("./database/index.js");
-const PORT = 8000;
+const PORT = 3000;
 const app = express();
 const cors = require("cors");
 const productsRouter = require("./routes/ProductRoutes.js");
