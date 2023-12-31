@@ -12,7 +12,7 @@ const Product = sequelize.define("Product", {
     allowNull: false,
   },
   image: {
-    type: DataTypes.JSON,
+    type: DataTypes.TEXT("long"),
     allowNull: true,
   },
   description: {
@@ -34,6 +34,10 @@ const Product = sequelize.define("Product", {
     },
   },
   createdAt: {
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
+  updatedAt: {
     type: DataTypes.DATE,
     allowNull: false,
   },
