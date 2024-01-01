@@ -1,1 +1,6 @@
-{}
+{
+  "/page": "app/page.js",
+  "/adminDashboard/product/page": "app/adminDashboard/product/page.js",
+  "/adminDashboard/page": "app/adminDashboard/page.js",
+  "/adminDashboard/Create/page": "app/adminDashboard/Create/page.js"
+}
