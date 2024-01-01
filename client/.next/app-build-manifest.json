@@ -1,15 +1,15 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
     ],
     "/adminDashboard/page": [
       "static/chunks/webpack.js",
@@ -19,7 +19,13 @@
     "/adminDashboard/product/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/adminDashboard/product/page.css",
       "static/chunks/app/adminDashboard/product/page.js"
+    ],
+    "/adminDashboard/Create/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adminDashboard/Create/page.js"
     ]
   }
 }

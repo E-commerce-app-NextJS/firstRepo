@@ -12,8 +12,8 @@ const Category = sequelize.define("Category", {
     allowNull: false,
   },
   image: {
-    type: DataTypes.STRING,
-    allowNull: true, 
+    type: DataTypes.TEXT('long'),
+    allowNull: true,
   },
 });
 

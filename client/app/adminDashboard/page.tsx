@@ -143,6 +143,10 @@ export default function App() {
           <Link href="/adminDashboard/product">
           <Button color="inherit">product</Button>
           </Link >
+          <Link href="/adminDashboard/Create">
+          <Button color="inherit">New Product</Button>
+          </Link >
+          
           <Button color="inherit">Logout</Button>
         </Toolbar>
       </AppBar>
