@@ -10,6 +10,45 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/home/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/home/contact/page.js"
+    ],
+    "/home/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/home/about/page.js"
+    ],
+    "/home/(components)/men/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/home/(components)/men/page.css",
+      "static/chunks/app/home/(components)/men/page.js"
+    ],
+    "/home/(components)/women/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/home/(components)/women/page.css",
+      "static/chunks/app/home/(components)/women/page.js"
+    ],
+    "/home/(components)/kids/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/home/(components)/kids/page.css",
+      "static/chunks/app/home/(components)/kids/page.js"
+    ],
+    "/home/(components)/babies/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/home/(components)/babies/page.css",
+      "static/chunks/app/home/(components)/babies/page.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ]
   }
 }
