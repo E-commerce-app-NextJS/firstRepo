@@ -1,5 +1,4 @@
 {
-  "/not-found": "app/not-found.js",
   "/home/(components)/men/page": "app/home/(components)/men/page.js",
   "/home/(components)/women/page": "app/home/(components)/women/page.js",
   "/home/(components)/kids/page": "app/home/(components)/kids/page.js",

@@ -14,7 +14,7 @@ const Babies=()=>{
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const res = await fetch("http://localhost:8000/products/");
+            const res = await fetch("http://localhost:8000/products/category/"+4);
             const data = await res.json();
             setData(data);
           } catch (error) {
